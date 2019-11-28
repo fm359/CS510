@@ -1,0 +1,19 @@
+Farhan Muhammad
+fm359@drexel.edu
+
+List of files:
+
+bayes.py (non-executable)
+bayesbest.py (non-executable)
+evaluate.py (main executable)
+README
+Evaluation_Documentation
+
+Compilation instructions:
+chmod +x evaluate.py
+
+Execution instructions:
+On tux command line, type "python evaluate.py TESTDIR" where TESTDIR is the test directory
+TESTDIR should be in the format: "DIRECTORY_NAME"/
+
+To specify which classifier to run, change the name of the variable testFile in evaluate.py 

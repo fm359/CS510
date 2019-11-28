@@ -1,0 +1,35 @@
+Part 3. Reflection
+
+Since the algorithm is programmed to include all words in a text file into the dictionary,
+the classifier's performance depends on the number of words in the test sentence
+that are neutral such as is, was, the, and, etc. Also, the classifier fails to perform on very 
+small sentences since it increases the chances of a word not being in the dictionary,
+Especially if the words are neutral. Examples of such sentences are:
+
+1. This movie was nice.
+2. Okay!
+3. Not a bad movie.
+
+Part 5. Evaluation
+
+Both classifiers were trained using the movies_reviews directory. A subset of 1207
+files were used for testing the classifiers. The results are as follows.
+
+bayes.py                                bayesbest.py
+
+Results Summary:                        Results Summary:
+positive: 773                           positive: 756
+neutral: 94                             neutral: 30
+negative: 340                           negative: 421
+Classification Accuracy:  84.51%        Classification Accuracy:  86.50%
+Classification Precision: 96.77%        Classification Precision: 92.83%
+Classification Recall:    80.75%        Classification Recall:    85.49%
+Classification F-measure: 88.04%        Classification F-measure: 89.01%
+
+The performances of the classifiers were as shown above due to several possible reasons.
+One major reason was the threshold for classifying a review as neutral. This was set
+arbitrarily with trial-and-error to obtain a decent performance. The improvement for
+bayesbest.py was due to the exclusion of words less than 3 letters long as well as the
+use of bigrams. Some other ways to improve the classifier would be to add other criteria
+such as file length, capitalization, punctuations, etc. Another interesting way to approach
+this task could be to use neural networks such Recurrent Neural Networks.
