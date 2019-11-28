@@ -1,0 +1,19 @@
+Farhan Muhammad
+fm359@drexel.edu
+
+List of files:
+
+hw1.py (executable)
+hw1.sh (main executable)
+README
+output-hw1.txt (output file)
+SBP-level0.txt
+SBP-level1.txt
+SBP-level2.txt
+SBP-level3.txt
+
+Execution instructions:
+On tux command line, type "./hw1.sh"
+
+Parts completed:
+Part1 and Part2
